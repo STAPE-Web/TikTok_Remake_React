@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none;
+}
+
+.links {
+    color: #000;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #E8E8E8;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+header .search {
+    width: 350px;
+    background: #F1F1F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 100px;
+}
+
+header .search input {
+    width: 100%;
+    border: none;
+    background: transparent;
+}
+
+header .search input::placeholder {
+    color: #999;
+}
+
+header .search ion-icon {
+    color: #999;
+    font-size: 24px;
+
+}
+
+header .navigation {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .navigation ion-icon {
+    font-size: 30px;
+}
+
+header .navigation img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.leftSide {
+    width: 20%;
+    color: #454545;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 100;
+}
+
+.leftSide hr {
+    border: none;
+    background: #d4d4d4;
+    height: 1px;
+}
+
+.leftSide .accountList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.leftSide .accountList .account {
+    display: flex;
+    align-items: center;
+}
+
+.leftSide .accountList .account:hover {
+    background: #eee;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.leftSide .accountList .account img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.leftSide .accountList .account .accountInfo {
+    margin-left: 10px;
+}
+
+.leftSide .accountList .account .accountInfo p:nth-child(1) {
+    font-weight: bold;
+}
+
+.leftSide .hashTags {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.leftSide .hashTags p {
+    border-radius: 30px;
+    padding: 3px 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.leftSide .hashTags p:hover {
+    cursor: pointer;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #999;
+    margin: 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.videoList {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.video {
+    padding: 30px;
+    width: 650px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.video .top img {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.video .top .VideoInfo p,
+.video .top .music {
+    margin-bottom: 10px;
+}
+
+.video .top .music {
+    display: flex;
+    align-items: center;
+}
+
+.video .top .music ion-icon {
+    font-size: 20px;
+}
+
+.video .top .hashTags {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+}
+
+.ProfileInfo {
+    display: flex;
+    align-items: center;
+}
+
+.video .top,
+.ProfileInfo,
+.video .bottom {
+    display: flex;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.video button {
+    background: transparent;
+    border: 1px solid #FE2C55;
+    color: #FE2C55;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.video .bottom video {
+    border-radius: 30px;
+    width: 340px;
+    height: 600px;
+}
+
+.video .bottom .stats .info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video .bottom .stats .info ion-icon {
+    font-size: 25px;
+    background: #F1F1F2;
+    padding: 15px;
+    border-radius: 100%;
+}
+
+.upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.upload .box {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+}
+
+.upload .box .top p {
+    color: #999;
+}
+
+.upload .box .top {
+    margin-bottom: 30px;
+}
+
+.upload .box .bottom {
+    display: flex;
+    gap: 30px;
+}
+
+.upload .box .bottom .left input {
+    display: none;
+}
+
+.upload .box .bottom .left {
+    width: 250px;
+    height: 450px;
+    border: 2px dashed rgba(22, 24, 35, 0.2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upload .box .bottom .left:hover {
+    border: 2px dashed rgba(254, 44, 85, 1);
+    background: #fafafa;
+}
+
+.upload .box .bottom .left ion-icon {
+    font-size: 40px;
+    color: #B0B0B4;
+}
+
+.upload .box .bottom .left p {
+    font-size: 18px;
+}
+
+.upload .box .bottom .left label {
+    padding: 10px 30px;
+    background: #FE2C55;
+    color: #fff;
+}
+
+.upload .box .bottom .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+}
+
+.upload .box .bottom .right .div {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload .box .bottom .right label {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.upload .box .bottom .right .div input {
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 2px solid #999;
+}
+
+.upload .box .bottom .right .div textarea {
+    height: 150px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 2px solid #999;
+    resize: none;
+}
+
+.upload .box .bottom .right .div select {
+    padding: 15px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.upload .box .bottom .right .div .checkbox {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.upload .box .bottom .right .div .checkbox input {
+    width: 16px;
+    height: 16px;
+}
+
+.upload .box .bottom .right .div .checkbox span {
+    margin-right: 15px;
+}
+
+.upload .box .bottom .right .div .checkbox label {
+    margin-bottom: 0px;
+}
+
+.upload .box .bottom .right .btns button {
+    margin-right: 10px;
+    background: #FE2C55;
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.upload .box .bottom .right .btns button:nth-child(1) {
+    border: 2px solid #ebebeb;
+    background: #fff;
+    color: #000;
+}
+
+.upload .box .bottom .right .btns button:disabled {
+    background: #F2F2F2;
+    color: #A7A7AB;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    flex-direction: column;
+}
+
+.profile .top {
+    display: flex;
+    width: 60%;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.profile .top img {
+    border-radius: 100%;
+}
+
+.profile .top .share {
+    display: flex;
+    gap: 10px;
+}
+
+.profile .top .share ion-icon {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.profile .bottom {
+    display: flex;
+    width: 60%;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.profile .bottom .stats {
+    display: flex;
+    gap: 20px;
+    color: #4D4D4D;
+}
+
+.profile .bottom .stats p span {
+    font-weight: bold;
+}
+
+.profile .VideoProfile {
+    display: flex;
+}
+
+.profile hr {
+    margin: 20px 0;
+    width: 60%;
+    border: none;
+    height: 1px;
+    background: #d4d4d4;
+}
+
+.profile .VideoProfile {
+    display: flex;
+    gap: 15px;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+.profile .VideoProfile video {
+    width: 200px;
+    object-fit: cover;
+    height: 275px;
+    border-radius: 10px;
+}
+
+.profile .VideoProfile p:nth-child(2) {
+    transform: translateY(-30px);
+    margin: 0 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.profile .VideoProfile p:nth-child(3) {
+    transform: translateY(-15px);
+    width: 200px;
+}
+
+.DropDown {
+    position: absolute;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: right;
+}
+
+.DropDown ion-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.DropDown div {
+    display: flex;
+    padding: 15px 30px;
+    cursor: pointer;
+    align-items: center;
+    gap: 15px;
+}
+
+.DropDown div:hover {
+    background: #d4d4d4;
+}
+
+.FooterLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.FooterLinks .box h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.FooterLinks .box .links {
+    display: flex;
+    gap: 30px;
+}
+
+.FooterLinks .box a {
+    color: #fe2c55;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.ButtonTop {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.ButtonTop a {
+    color: #FE2C55;
+}
+
+.ButtonTop a ion-icon {
+    font-size: 50px;
+}
+
+.Settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Settings .box {
+    width: 700px;
+    padding: 30px;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Settings .box .delete {
+    color: #fe2c55;
+    cursor: pointer;
+}
+
+.Settings .box .setting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Settings .box hr {
+    border: none;
+    background: #d4d4d4;
+    height: 1px;
+}
+
+.Settings .box .private {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Settings .box .private p {
+    font-weight: bold;
+}
+
+.Settings .box .private input {
+    border: none;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 10px 0;
+    color: #999;
+    font-weight: bold;
+}
