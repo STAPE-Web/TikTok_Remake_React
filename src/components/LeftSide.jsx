@@ -24,7 +24,7 @@ const LeftSide = () => {
                 <a href='/'>Privacy and policy</a>
                 <a href='/'>Terms of use</a>
             </div>
-        </div >
+        </div>
     )
 }
 
